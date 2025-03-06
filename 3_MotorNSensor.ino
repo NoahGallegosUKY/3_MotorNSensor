@@ -88,12 +88,12 @@ void loop()
   if (distance < 10)
   {
     
-    rightMotor(0);
-    leftMotor(0);
+    rightMotor(1);
+    leftMotor(1);
   
   
   }
-  if (digitalRead(7) == LOW)
+  if (digitalRead(8) == LOW)
   {                                                     //if the switch is in the ON position
     if (Serial.available() > 0)                         //if the user has sent a command to the RedBoard
     {
